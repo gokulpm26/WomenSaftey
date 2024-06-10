@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">SafeGuard</string>
+    <string name="sign_up">Sign-up</string>
+    <string name="name">Enter Full Name</string>
+    <string name="phone_number">Enter Phone Number</string>
+    <string name="email">Enter E-mail</string>
+    <string name="date_of_birth">Pick Date Of birth</string>
+    <string name="Favorite_contact_1">Enter Favorite Contact 1</string>
+    <string name="Favorite_contact_2">Enter Favorite Contact 2</string>
+    <string name="note">Note: </string>
+    <string name="you_can_add_more_contacts_later">More contacts can be added later</string>
+    <string name="Password">Enter Password</string>
+    <string name="Re_Password">Re-Enter Password</string>
+    <string name="phone_number_e_mail">Phone Number/E-mail</string>
+    <string name="login">Login</string>
 </resources>

@@ -13,7 +13,19 @@
         android:theme="@style/Theme.SafeGuard"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".SOS_btn_page"
+            android:exported="false" />
+        <activity
+            android:name=".Adding_favorite_contacts"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".Sign_up"
+            android:exported="false" />
+        <activity
+            android:name=".Splash_Screen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +33,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

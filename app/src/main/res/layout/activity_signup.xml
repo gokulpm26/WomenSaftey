@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    tools:context=".Sign_up"
+    android:padding="13dp">
+
+
+<com.google.android.material.circularreveal.cardview.CircularRevealCardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="50dp"
+    android:elevation="100dp"
+    android:backgroundTint="#7AFFFFFF"
+    android:layout_marginTop="70dp"
+    android:layout_marginBottom="70dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="@string/sign_up"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/blue"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/artifika"
+                    android:hint="@string/name"
+                    android:textColor="@color/black"
+                    android:textSize="18sp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/artifika"
+                    android:maxLines="@integer/material_motion_duration_medium_1"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/artifika"
+                    android:hint="@string/phone_number"
+                    android:textColor="@color/black"
+                    android:textSize="18sp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/artifika"
+                    android:maxLength="10"
+                    android:textColor="@color/black"
+                    android:inputType="number"
+                    android:textSize="20sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email"
+                    android:fontFamily="@font/artifika"
+                    android:textColor="@color/black"
+                    android:textSize="18sp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:maxLines="@integer/material_motion_duration_short_1"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/artifika"
+                    android:inputType="textEmailAddress"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/date_of_birth"
+                    android:fontFamily="@font/artifika"
+                    android:textColor="@color/black"
+                    android:textSize="18sp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/artifika"
+                    android:textColor="@color/black"
+                    android:editable="false"
+                    android:textSize="20sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/artifika"
+                    android:hint="@string/Password"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/blue"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/artifika"
+                    android:maxLines="@integer/material_motion_duration_medium_1"
+                    android:textColor="@color/black"
+                    android:inputType="textPassword"
+                    android:textSize="20sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/artifika"
+                    android:hint="@string/Re_Password"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/blue"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/re_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/artifika"
+                        android:maxLines="@integer/material_motion_duration_medium_1"
+                        android:textColor="@color/black"
+                        android:inputType="textPassword"
+                        android:textSize="20sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/note"
+                    android:textColor="@color/red"
+                    android:fontFamily="@font/artifika"
+                    android:textStyle="bold"
+                    android:layout_marginRight="8dp"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/you_can_add_more_contacts_later"
+                    android:textColor="@color/blue"
+                    android:fontFamily="monospace"
+                    android:textStyle="bold"
+                    android:textSize="15sp"/>
+                </LinearLayout>
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Next"
+                    android:layout_marginTop="40dp"
+                    android:insetLeft="60dp"
+                    android:insetRight="60dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/artifika"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:backgroundTint="#58F303"/>
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+</com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+</LinearLayout>
