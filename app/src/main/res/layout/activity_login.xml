@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -8,6 +8,8 @@
     android:orientation="vertical"
     android:background="@color/pink"
     android:padding="10dp"
+    android:layout_gravity="center"
+    android:theme="@style/Theme.Material3.DynamicColors.Light.NoActionBar"
     tools:context=".Login">
     <com.google.android.material.circularreveal.cardview.CircularRevealCardView
         android:layout_width="match_parent"
@@ -15,7 +17,7 @@
         app:cardCornerRadius="50dp"
         android:elevation="100dp"
         android:backgroundTint="#7AFFFFFF"
-        android:layout_marginTop="150dp"
+        android:layout_centerInParent="true"
         android:layout_marginBottom="70dp">
         <LinearLayout
             android:layout_width="match_parent"
@@ -40,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:fontFamily="@font/artifika"
-                android:hint="@string/phone_number_e_mail"
+                android:hint="@string/enter_phone_number"
                 android:textColor="@color/black"
                 android:textSize="18sp">
 
@@ -49,7 +51,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/artifika"
-                android:maxLines="@integer/material_motion_duration_medium_1"
+                android:inputType="number"
+                android:maxLength="10"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -61,7 +64,7 @@
                 android:fontFamily="@font/artifika"
                 app:passwordToggleEnabled="true"
                 app:passwordToggleTint="@color/blue"
-                android:hint="@string/name"
+                android:hint="@string/Password"
                 android:textColor="@color/black"
                 android:textSize="18sp" >
 
@@ -75,11 +78,22 @@
                 android:textSize="20sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
+            <TextView
+                android:id="@+id/next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Not Registered Yet? Click Here"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/red"
+                android:layout_marginTop="25dp"
+                android:textSize="16dp"/>
+
             <com.google.android.material.button.MaterialButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/log_in"
                 android:text="@string/login"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
                 android:insetLeft="60dp"
                 android:insetRight="60dp"
@@ -93,4 +107,4 @@
         </LinearLayout>
     </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
 
-</LinearLayout>
+</RelativeLayout>

@@ -5,4 +5,13 @@
     <color name="red">#FF0000</color>
     <color name="pink">#FCBAFF</color>
     <color name="blue">#031C78</color>
+    <color name="coral">#FF7F50</color>
+    <color name="brown">#D2B48C</color>
+    <color name="deep_purple">#4B0082</color>
+    <color name="teal">#008080</color>
+    <color name="emerald">#50C878</color>
+    <color name="Navy">#003366</color>
+    <color name="yellow">#FFD700</color>
+    <color name="grey">#D3D3D3</color>
+
 </resources>

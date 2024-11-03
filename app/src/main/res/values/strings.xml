@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">SafeGuard</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
     <string name="sign_up">Sign-up</string>
     <string name="name">Enter Full Name</string>
     <string name="phone_number">Enter Phone Number</string>
@@ -11,6 +13,14 @@
     <string name="you_can_add_more_contacts_later">More contacts can be added later</string>
     <string name="Password">Enter Password</string>
     <string name="Re_Password">Re-Enter Password</string>
-    <string name="phone_number_e_mail">Phone Number/E-mail</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
     <string name="login">Login</string>
+    <string name="safeguard">SafeGuard</string>
+    <string name="my_profile">My Profile</string>
+    <string name="favorite_contacts">Favorite contacts</string>
+    <string name="log_out">Log-out</string>
+    <string name="how_it_works">How it Works</string>
+    <string name="by_cyber_siblings">By Cyber Siblings</string>
+    <string name="add_numbers">Add/Update Contacts</string>
+    <string name="update">Update</string>
 </resources>

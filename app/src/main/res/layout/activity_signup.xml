@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,17 +9,19 @@
     android:layout_height="match_parent"
     android:background="@color/pink"
     tools:context=".Sign_up"
-    android:padding="13dp">
+    android:paddingRight="13dp"
+    android:paddingLeft="13dp"
+    android:paddingTop="100dp"
+    android:paddingBottom="100dp">
 
 
 <com.google.android.material.circularreveal.cardview.CircularRevealCardView
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="500dp"
     app:cardCornerRadius="50dp"
     android:elevation="100dp"
     android:backgroundTint="#7AFFFFFF"
-    android:layout_marginTop="70dp"
-    android:layout_marginBottom="70dp">
+    android:layout_centerInParent="true">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -123,7 +125,43 @@
                     android:textSize="20sp" />
                 </com.google.android.material.textfield.TextInputLayout>
 
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/Favorite_contact_1"
+                    android:fontFamily="@font/artifika"
+                    android:textColor="@color/black"
+                    android:textSize="18sp">
 
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fav_contact_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/artifika"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:hint="@string/Favorite_contact_2"
+                android:textColor="@color/black"
+                android:textSize="18sp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fav_contact_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/artifika"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
@@ -170,34 +208,11 @@
 
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="20dp">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/note"
-                    android:textColor="@color/red"
-                    android:fontFamily="@font/artifika"
-                    android:textStyle="bold"
-                    android:layout_marginRight="8dp"
-                    android:textSize="16sp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/you_can_add_more_contacts_later"
-                    android:textColor="@color/blue"
-                    android:fontFamily="monospace"
-                    android:textStyle="bold"
-                    android:textSize="15sp"/>
-                </LinearLayout>
                 <com.google.android.material.button.MaterialButton
+                    android:id="@+id/signup"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Next"
+                    android:text="@string/sign_up"
                     android:layout_marginTop="40dp"
                     android:insetLeft="60dp"
                     android:insetRight="60dp"
@@ -207,8 +222,28 @@
                     android:textStyle="bold"
                     android:backgroundTint="#58F303"/>
 
-                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Already Registered? Click here to proceed to"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="25dp"
+                    android:textSize="16dp"/>
+                <TextView
+                    android:id="@+id/login_move"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/red"
+                    android:layout_marginBottom="40dp"
+                    android:textSize="16dp"/>
+
+
+
+            </LinearLayout>
             </ScrollView>
         </LinearLayout>
 </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
-</LinearLayout>
+</RelativeLayout>
